@@ -25,6 +25,30 @@ img {
   max-width: 100%;
   display: block;
 }
+
+main {
+  display: grid;
+  place-items: center;
+  max-width: 80em;
+  margin: auto;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  padding: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+}
+
+li {
+  height: 20em;
+  border: 6px solid #fff;
+  overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
